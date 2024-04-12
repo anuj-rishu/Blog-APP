@@ -6,7 +6,7 @@ import Card from './Card'
 const Blogs = () => {
   const {posts ,loading} = useContext(Appcontext)
   return (
-    <div  className=' w-11/12 max-w-[670px] py-8 flex flex-col gap-y-7 mt-[66px] mb-[66px]'>
+   <div className='flex justify-center items-center h-screen w-11/12 max-w-[670px] py-8 flex-col gap-y-7 mt-[66px] mb-[66px]'>
 {
   loading ?(<Spinner/>):(
     posts.length ===0 ?
